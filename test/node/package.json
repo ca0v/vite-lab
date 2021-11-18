@@ -1,0 +1,14 @@
+{
+  "name": "browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "npm-run-all -p test:build test:run",
+    "test:build": "esbuild index.ts --bundle --outfile=test.js --watch",
+    "test:run": "mocha -p -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
