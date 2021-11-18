@@ -1,0 +1,15 @@
+{
+  "name": "ol-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "esbuild": "cd ./ol-esbuild && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "create-ol-app": "^1.1.0"
+  }
+}
