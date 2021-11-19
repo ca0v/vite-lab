@@ -1,9 +1,14 @@
-import "./node-and-browser";
+import "mocha/mocha-es2018";
+console.assert(!!chai, "chai exists");
 
-import { assert } from "chai";
+//import { assert } from "chai";
 
-describe("test that run in browser only", () => {
+mocha.setup({ ui: "bdd", bail: false, timeout: 3000 });
+const runner = mocha.run();
+
+describe("tests that run in browser only", () => {
+  import("./node-and-browser");
   it("asserts", () => {
-    assert.ok(1);
+    //assert.ok(1);
   });
 });

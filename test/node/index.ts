@@ -1,8 +1,9 @@
 import "./node-and-browser";
+import "chai";
 
 import { assert } from "chai";
 
-describe("test that run in node only", () => {
+describe("tests that run in node only", () => {
   it("asserts", () => {
     assert.ok(1);
   });

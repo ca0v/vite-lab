@@ -5,10 +5,13 @@
   "main": "test.js",
   "scripts": {
     "test": "npm-run-all -p test:build test:run",
-    "test:build": "esbuild index.ts --bundle --outfile=test.js --watch",
-    "test:run": "mocha -p -w"
+    "test:build": "esbuild index.ts --bundle --outfile=test.js --watch --format=esm",
+    "test:run": "npx live-server --port=8081"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }

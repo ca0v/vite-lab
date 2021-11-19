@@ -5,7 +5,7 @@
   "main": "test.js",
   "scripts": {
     "test": "npm-run-all -p test:build test:run",
-    "test:build": "esbuild index.ts --bundle --outfile=test.js --watch",
+    "test:build": "esbuild index.ts --bundle --outfile=test.js --watch --format=esm",
     "test:run": "mocha -p -w"
   },
   "keywords": [],
