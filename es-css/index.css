@@ -1,0 +1,47 @@
+* {
+  --image1: url(./assets/address.png);
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+.image {
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid red;
+}
+
+.image1 {
+  background-image: var(--image1);
+}
+
+.image2 {
+  width: 3rem;
+  height: 3rem;
+  background-image: var(--image1);
+}
+
+.image3 {
+  width: 4rem;
+  height: 4rem;
+  background-image: var(--image1);
+}
+
+.flex {
+  border: 1px solid red;
+  display: flex;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.center {
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}

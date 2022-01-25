@@ -1,0 +1,12 @@
+{
+  "name": "es-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "esbuild --bundle --loader:.png=dataurl --format=esm --outfile=./bin/index.js --sourcemap --target=esnext index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
