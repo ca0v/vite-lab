@@ -1,12 +1,17 @@
 {
   "name": "es-css",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "esbuild --bundle --loader:.png=dataurl --format=esm --outfile=./bin/index.js --sourcemap --target=esnext index.ts"
+    "test": "esbuild --bundle --loader:.png=dataurl --loader:.scss=esbuild-sass-plugin --format=esm --outfile=./bin/index.js --sourcemap --target=esnext index.ts",
+    "build": "node build.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "esbuild-sass-plugin": "^2.2.0"
+  }
 }
